@@ -13,7 +13,7 @@ const Navbar = props => {
   return (
     <NavbarWrapper>
       <AppIcon>
-        <i class="fas fa-film" /> BingeWatch
+        <i class="fas fa-film" /> <span>BingeWatch</span>
       </AppIcon>
       <Links>
         <LinksGroup>

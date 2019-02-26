@@ -6,18 +6,25 @@ export const NavbarWrapper = styled(Flex)`
   position: fixed;
   top: 0;
   left: 0;
-  padding: 20px;
+  border-bottom: 1px solid #696dd3;
 `
 
 export const AppIcon = styled.div`
   width: 20%;
   font-size: 3rem;
   padding: 20px;
-  color: red;
+  /* color: red; */
+  /* color: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); */
+  span {
+    background: linear-gradient(to bottom, #33ccff 0%, #696dd3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
   i {
     margin-right: 5px;
     display: inline-block;
+    color: #696dd3;
   }
 `
 
@@ -37,5 +44,6 @@ export const LinksGroup = styled(Flex)`
 export const LoginGroup = styled(LinksGroup)`
   width: 15%;
   padding-left: 1%;
-  border-left: 1px solid red;
+  padding-right: 3%;
+  border-left: 1px solid #696dd3;
 `
