@@ -11,3 +11,13 @@ export const Flex = styled.div`
   justify-content: space-between;
   align-items: center;
 `
+
+export const Header = styled.header`
+  margin-top: 100px;
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+`

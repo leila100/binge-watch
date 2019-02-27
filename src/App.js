@@ -1,6 +1,8 @@
 import React, { Component } from "react"
+import { Route } from "react-router-dom"
 
 import Navbar from "./components/navigation/Navbar"
+import Home from "./containers/Home"
 
 import { Container } from "./styles/generalStyles"
 
@@ -17,10 +19,12 @@ class App extends Component {
         <Sign Up />  - Route for sign up form
     */
     return (
-      <Container>
+      <>
         <Navbar />
-        {/* <h1>Welcome to Binge Watch!</h1> */}
-      </Container>
+        <Container>
+          <Route path="/" component={Home} />
+        </Container>
+      </>
     )
   }
 }

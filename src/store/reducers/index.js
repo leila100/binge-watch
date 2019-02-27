@@ -1,5 +1,7 @@
+import { movies } from "../../dummy-data"
+
 const initialState = {
-  movies: [],
+  movies: movies,
   shows: []
 }
 
